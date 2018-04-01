@@ -1,0 +1,232 @@
+@charset "UTF-8";
+body .menu-icon {
+    background-size: 85% auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    z-index: 0;
+    left: 10px;
+    top: 10px;
+    -webkit-transition: all 150ms ease-out;
+    -moz-transition: all 150ms ease-out;
+    -o-transition: all 150ms ease-out;
+    transition: all 150ms ease-out;
+}
+body nav.sidebar ul.elements > li:hover .menu-icon {
+    background-size: 100% auto;
+    -webkit-transition: all 150ms ease-in;
+    -moz-transition: all 150ms ease-in;
+    -o-transition: all 150ms ease-in;
+    transition: all 150ms ease-in;
+}
+body.empty .menu-icon {
+    width: 160px;
+    height: 160px;
+}
+.menu-icon.ic-warehouse {
+    background-image: url("../images/icons/ic-warehouse.svg");
+}
+.menu-icon.ic-sales {
+    background-image: url("../images/icons/ic-sales.svg");
+}
+.menu-icon.ic-reports {
+    background-image: url("../images/icons/ic-reports.svg");
+}
+.menu-icon.ic-receipt {
+    background-image: url("../images/icons/ic-receipt.svg");
+}
+.menu-icon.ic-infographics {
+    background-image: url("../images/icons/ic-infographics.svg");
+}
+.menu-icon.ic-settings {
+    background-image: url("../images/icons/ic-settings.svg");
+}
+
+
+/* Bootstrap buttons overrides */
+.btn-primary {
+    color: #F1F1F1;
+    background-color: #7b0046;
+    border-color: #3298cb;
+}
+
+
+html, body {
+    width: 100%;
+    height: 100%;
+	font-family: "Arial Narrow", Arial, sans-serif;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+    
+    background: #f1f1f1;
+    background: -moz-linear-gradient(top, #f1f1f1 0%, #fdf0fe 100%);
+    background: -webkit-linear-gradient(top, #f1f1f1 0%,#fdf0fe 100%);
+    background: linear-gradient(to bottom, #f1f1f1 0%,#fdf0fe 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1f1f1', endColorstr='#fdf0fe',GradientType=0 );
+}
+body nav.sidebar {
+    position: fixed;
+    width: 80px;
+    height: 100%;
+    left: 0;
+    top: 0;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    overflow-y: scroll; /* has to be scroll, not auto */
+    -webkit-overflow-scrolling: touch;
+    z-index: 2;
+    color: white;
+    
+    -webkit-transition: all 150ms ease-in;
+    -moz-transition: all 150ms ease-in;
+    -o-transition: all 150ms ease-in;
+    transition: all 150ms ease-in;
+    
+    border-right: 2px solid rgba(105,105,127,0.9);
+    background: #281738;
+    background: -moz-linear-gradient(top, #281738 0%, #2a3052 100%);
+    background: -webkit-linear-gradient(top, #281738 0%,#2a3052 100%);
+    background: linear-gradient(to bottom, #281738 0%,#2a3052 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#281738', endColorstr='#2a3052',GradientType=0 );
+    -webkit-box-shadow: inset -15px 0px 10px -8px rgba(0,0,0,0.54);
+    -moz-box-shadow: inset -15px 0px 10px -8px rgba(0,0,0,0.54);
+    box-shadow: inset -15px 0px 10px -8px rgba(0,0,0,0.54);
+}
+
+body.empty nav.sidebar {
+    border-right: 0px;
+    width: 100%;
+}
+
+body nav.sidebar ul {
+    list-style: none;
+    padding: 0px;
+    max-width: 1080px;
+    margin: 0 auto;
+    font-size: 0;
+    text-align: center;
+}
+body nav.sidebar ul.logo {
+    padding: 10px;
+    margin-top:10px;
+}
+body nav.sidebar ul.logo li:first-child {
+    width:60px;
+    height:60px;
+    background-image: url("../images/icons/ic-logo-color-short_HYPR_LOGO.svg");
+    display:inline-block;
+}
+body.empty nav.sidebar ul.logo li:first-child {
+    width: 180px;
+    height: 75px;
+    background-image: url(../images/icons/ic-logo-color-long_HYPR_LOGO.svg);
+    margin-bottom: 30px;
+}
+body nav.sidebar ul.elements > li {
+    width: 100%;
+    padding: 100% 10px 0 10px;
+    background-color: rgba(105,105,127,0);
+    margin-top: 10px;
+    position: relative;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 150ms ease-out;
+    -moz-transition: all 150ms ease-out;
+    -o-transition: all 150ms ease-out;
+    transition: all 150ms ease-out;
+}
+body.empty nav.sidebar ul.elements > li {
+    width: 180px;
+    height: 180px;
+    display: inline-block;
+    padding: 10px;
+    background-color: rgba(105,105,127,0);
+    margin-top: 10px;
+    position: relative;
+
+}
+body nav.sidebar ul.elements > li:hover {
+    cursor:pointer;
+    background-color: rgba(105,105,127,0.9);
+    -webkit-transition: all 150ms ease-in;
+    -moz-transition: all 150ms ease-in;
+    -o-transition: all 150ms ease-in;
+    transition: all 150ms ease-in;
+}
+body nav.sidebar ul.elements > li > span.menu-item-name {
+    width: 60px;
+    position: absolute;
+    z-index: 2;
+    bottom: 14px;
+    left: 50%;
+    -webkit-transform: translate(-50%,50%);
+    -moz-transform: translate(-50%,50%);
+    -o-transform: translate(-50%,50%);
+    transform: translate(-50%,50%);
+    text-align: center;
+    font-size: 12px;
+    line-height: 12px;
+}
+
+body.empty nav.sidebar ul.elements > li > span.menu-item-name {
+    width: 160px;
+    bottom: 44px;
+    font-size: 18px;
+    line-height: 18px;
+}
+
+body section.content {
+    width:100%;
+    min-height: 100%;
+    z-index: 1;
+    padding: 15px 15px 15px 95px;
+}
+body.empty section.content {
+    
+}
+section h1 {
+text-transform: uppercase;
+    font-weight: 800;
+    font-size: 25px;
+    color: #272544;
+    line-height: 46px;
+}
+section h1 > img {
+    vertical-align:top;
+}
+section .tr-menu {
+    position: absolute;
+    right:15px;
+    top:20px;
+}
+
+.table td {
+    border-top: 1px solid #c730ba;
+    padding: 10px;
+    vertical-align: middle;
+}
+.table td.flat {
+    font-size: 0px;
+}
+.table thead th {
+    border-bottom: 2px solid #c730ba;
+}
+
+section.content .actbtn {
+    width: 38px;
+    height: 38px;
+    position: relative;
+    display: inline-block;
+    background-size: 48px 48px;
+    background-position: center;
+    margin-left: 10px;    
+}
+.actbtn.edit {
+    background-image: url("../images/icons/ic-edit-edit-black.svg");
+}
+.actbtn.delete {
+    background-image: url("../images/icons/ic-edit-delete-black.svg");
+}

@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+<!-- BEGIN OF <head> template -->
+<head>
+<meta charset="UTF-8">
+<title>HYPR</title>
+    
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="HandheldFriendly" content="true"/>
+<meta name="MobileOptimized" content="320"/>
+    
+<link rel="apple-touch-icon" sizes="180x180" href="images/web-icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="images/web-icons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="images/web-icons/favicon-16x16.png">
+<link rel="manifest" href="images/web-icons/manifest.json">
+<link rel="mask-icon" href="images/web-icons/safari-pinned-tab.svg" color="#272545">
+<link rel="shortcut icon" href="images/web-icons/favicon.ico">
+<meta name="application-name" content="HYPR">
+<meta name="msapplication-TileColor" content="#272545">
+<meta name="msapplication-TileImage" content="images/web-icons/mstile-144x144.png">
+<meta name="msapplication-config" content="images/web-icons/browserconfig.xml">
+<meta name="theme-color" content="#272545">
+    
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="HYPR">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+    
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/tether.min.css">
+<link rel="stylesheet" href="css/tether-theme-arrows.min.css">
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<link rel="stylesheet" href="css/sweetalert.css">
+<link rel="stylesheet" href="css/hypr.min.css">
+</head>
+<!-- END OF <head> template -->
+<body>
+    
+<!-- BEGIN OF <nav> template -->
+<nav class="sidebar">
+    <ul class="logo">
+        <li></li>    
+    </ul>
+    <ul class="elements">
+        <li data-href="/"><span class="menu-icon ic-sales"></span><span class="menu-item-name">Продажби</span></li>
+        <li data-href="/"><span class="menu-icon ic-settings"></span><span class="menu-item-name">Настройки</span></li>
+        <li data-href="/"><span class="menu-icon ic-infographics"></span><span class="menu-item-name">Приходи и Разходи</span></li>
+        <li data-href="/"><span class="menu-icon ic-reports"></span><span class="menu-item-name">Отчети</span></li>
+        <li data-href="/"><span class="menu-icon ic-warehouse"></span><span class="menu-item-name">Складове</span></li>
+        <li data-href="/"><span class="menu-icon ic-receipt"></span><span class="menu-item-name">Отворени сметки</span></li>
+    </ul>
+</nav>
+<!-- END OF <nav> template -->    
+
+<section class="content">
+    <div class="container">
+<h1><img src="images/icons/ic_warehouse_black.svg" width="48" height="48" style="" alt="ICON"/> Section title</h1>
+    <div class="tr-menu">
+        <input type="button" value="Добави склад" class="btn btn-primary">
+    </div>
+    <div clas="row">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th style="width: 70px; text-align:center;">Код</th>
+                    <th>Име</th>
+                    <th style="width: 120px; text-align: center;"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr data-id="1" data-target="Бар">
+                    <td> 1 </td>
+                    <td> Бар </td>
+                    <td class="flat"><div class="actbtn edit"></div><div data-action="delete" class="actbtn delete"></div></td>
+                </tr>
+                <tr data-id="2" data-target="Бар тераса">
+                    <td> 2 </td>
+                    <td> Бар тераса </td>
+                    <td class="flat"><div class="actbtn edit"></div><div data-action="delete" class="actbtn delete"></div></td>
+                </tr>
+                <tr data-id="3" data-target="Кухня">
+                    <td> 3 </td>
+                    <td> Кухня </td>
+                    <td class="flat"><div class="actbtn edit"></div><div data-action="delete" class="actbtn delete"></div></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+</section>
+<!-- BEGIN OF default scripts template -->
+<script type="text/javascript" src="scripts/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="scripts/tether.min.js"></script>
+<script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+<script type="text/javascript" src="scripts/interface-events.min.js"></script>
+<script type="text/javascript" src="scripts/sweetalert.js"></script>
+<!-- END OF default scripts template -->
+    
+</body>
+</html>
